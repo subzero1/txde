@@ -24,20 +24,7 @@ function main() {
 	tableData.push(bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '机械信息,按编号或者名称查询', 3));
 	tableData.push(bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '仪表信息,按编号或者名称查询', 4));
 	tableView.data = tableData;
-
-	//左上角抬头信息
-	var headLabel = Ti.UI.createLabel({
-		color : '#87CEEB',
-		font : {
-			fontFamily : 'Arial',
-			fontSize : '16dip',
-			fontWeight : 'normal'
-		},
-		text : '网天公司定额通讯查询系统',
-		left : '2dip',
-		top : '2dip',
-		zIndex : '2'
-	});
+ 
 	//右下角版权信息
 	var infoLabel = Ti.UI.createLabel({
 		color : '#000',
@@ -74,7 +61,6 @@ function main() {
 		;
 	});
 	view.add(tableView);
-	win.add(headLabel);
 	win.add(view);
 	fun_createMenuBottomBar(win);
 	return win;
