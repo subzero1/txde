@@ -56,18 +56,9 @@ function ListWindow(tableName, title) {
         // if (search.value != null && search.value != '')
         i = fun_doSearch(tableName, search.value, startRow, i, tableData, tableView, win);
     });
-    // resetBtn.addEventListener('touchstart', function() {
-        // search.value = '';
-        // tableData = [];
-        // startRow = 0;
-        // i = 0;
-        // i = fun_doSearch(tableName, search.value, startRow, i, tableData, tableView, win);
-    // });
     search.addEventListener('blur', function() {
-         search.setBackgroundImage('/images/searchTextBackground.png');
     });
     search.addEventListener('focus', function() {
-        search.setBackgroundImage('/images/searchTextBackgroundx.png');
     });
     return win;
 };

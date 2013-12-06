@@ -3,6 +3,8 @@ Ti.include('../basic/UI.js');
 Ti.include('../service/user.js');
 function main() {
 	Ti.UI.setBackgroundColor('#000');
+	// var dimention = ui_getDimension();
+	
 	var win = Ti.UI.createWindow({
 		exitOnClose : true,
 		fullscreen : false,
@@ -24,7 +26,14 @@ function main() {
 	tableData.push(bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '机械信息,按编号或者名称查询', 3));
 	tableData.push(bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '仪表信息,按编号或者名称查询', 4));
 	tableView.data = tableData;
- 
+
+	//左上角logo
+	var headLogo = Ti.UI.createImageView({
+		image : '/images/hdpi/headLogo.png',
+		top : '0',
+		zIndex : '1',
+		height:'90dip'
+	});
 	//右下角版权信息
 	var infoLabel = Ti.UI.createLabel({
 		color : '#000',
@@ -61,6 +70,7 @@ function main() {
 		;
 	});
 	view.add(tableView);
+	win.add(headLogo);
 	win.add(view);
 	fun_createMenuBottomBar(win);
 	return win;
