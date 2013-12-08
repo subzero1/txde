@@ -1,12 +1,13 @@
 Logfile initialized
-[DEBUG] D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Program File\Android-SDK\sdk D:\Workspaces\Titanium\txde com.netsky.txde 5 WVGA800
+[INFO] logfile = D:\Workspaces\Titanium\txde\build.log
 [INFO] logfile = D:\Workspaces\Titanium\txde\build.log
 [DEBUG] D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py emulator TXDE D:\Program File\Android-SDK\sdk D:\Workspaces\Titanium\txde com.netsky.txde 5 WVGA800 x86
+[DEBUG] D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Program File\Android-SDK\sdk D:\Workspaces\Titanium\txde com.netsky.txde 5 WVGA800
 [INFO] Launching Android emulator...one moment
 [DEBUG] From: D:\Program File\Android-SDK\sdk\tools\emulator.exe
 [DEBUG] SDCard: C:\Users\liao\.titanium\android2.sdcard
-[INFO] Building TXDE for Android ... one moment
 [DEBUG] AVD ID: 5
+[INFO] Building TXDE for Android ... one moment
 [DEBUG] AVD Skin: WVGA800
 [DEBUG] AVD ABI: x86
 [DEBUG] SDK: D:\Program File\Android-SDK\sdk
@@ -15,7 +16,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.153000 seconds on emulator to get ready
+[DEBUG] waited 0.061000 seconds on emulator to get ready
 [DEBUG] com.netsky.txde installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
@@ -119,6 +120,10 @@ Logfile initialized
 [DEBUG] Building Java Sources: "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\ApplicationStylesheet.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\R.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeActivity.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeAppInfo.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
+[ERROR] Failed installing com.netsky.txde: 	pkg: /data/local/tmp/app.apk
+Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]
+rm failed for /data/local/tmp/app.apk, No such file or directory
+
 [DEBUG] creating unsigned apk: D:\Workspaces\Titanium\txde\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/images/hdpi/arrow_left.png
 [DEBUG] from resource zip => assets/Resources/images/hdpi/de.png
@@ -231,13 +236,9 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.063000 seconds on emulator to get ready
+[DEBUG] waited 0.054000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TXDE
-[ERROR] Failed installing com.netsky.txde: 	pkg: /data/local/tmp/app.apk
-Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]
-rm failed for /data/local/tmp/app.apk, No such file or directory
-
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }
 
 [INFO] Deployed TXDE ... Application should be running.
