@@ -1,10 +1,10 @@
 Ti.include('./basic/BasicMenuItem.js');
-Ti.include('../basic/UI.js');
+Ti.include('./basic/UI.js');
 Ti.include('../service/user.js');
+var dimention=ui_getDimension();
 function main() {
 	Ti.UI.setBackgroundColor('#000');
-	// var dimention = ui_getDimension();
-	
+	Ti.API.info('++++++++++++++++++++'+dimention);
 	var win = Ti.UI.createWindow({
 		exitOnClose : true,
 		fullscreen : false,
@@ -29,7 +29,7 @@ function main() {
 
 	//左上角logo
 	var headLogo = Ti.UI.createImageView({
-		image : '/images/hdpi/headLogo.png',
+		image : '/images/'+dimention+'headLogo.png',
 		top : '0',
 		zIndex : '1',
 		height:'90dip'
