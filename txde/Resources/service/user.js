@@ -66,7 +66,8 @@ function su_getUserLocation() {
 
 //获取用户设备的各个参数
 function su_userLog(latitude, longitude, location) {
-    var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
+    // var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
+    var url = "http://tjnetsky.web.myjhost.net/gys/mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             Ti.API.info("Received text: " + this.responseText);
