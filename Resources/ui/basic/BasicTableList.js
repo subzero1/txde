@@ -5,9 +5,9 @@ function fun_createTableTitle() {
         className : 'forumEvent', // used to improve table performance
         rowIndex : 0, // custom property, useful for determining the row during events
         // backgroundColor:'#dbdabb',
-        backgroundImage:'/images/tableTitleBackground.png',
-        top:'54dip',
-        height:'28dip'
+        backgroundImage : '/images/tableTitleBackground.png',
+        top : '54dip',
+        height : '28dip'
     });
 
     // Create a Label.
@@ -61,7 +61,7 @@ function fun_createTableRow(rows, index) {
         rowIndex : index, // custom property, useful for determining the row during events
         id : rows.field(0),
         height : '64dip',
-        backgroundImage:''
+        backgroundImage : ''
     });
 
     // Create a Label.
@@ -84,20 +84,23 @@ function fun_createTableRow(rows, index) {
         },
         // width : '80dip',
         left : '46dip',
+        top : '8dip',
         textAlign : 'left',
     });
 
     // 定额名称
     var label3 = Ti.UI.createLabel({
         text : rows.field(2),
-        color:'#000000',
+        color : '#000000',
         font : {
             fontSize : defaultFontSize
         },
-        left : '138dip',
-        right:'22dip',
+        left : '46dip',
+        right : '22dip',
+        top : '32dip',
         color : 'black',
         textAlign : 'left',
+        backgroundcolor : 'red'
     });
 
     //右侧小箭头
@@ -108,6 +111,13 @@ function fun_createTableRow(rows, index) {
         height : '16dip',
         zIndex : '1'
     });
+
+    var bh = '' + rows.field(2);
+    //表格适应性调整,名称大于15高度增加
+    if (bh.length > 15) {
+        Ti.API.info('表格高度:' + bh.length + (bh.length / 16));
+        tableRow.height = (64 + bh.length ) + 'dip';
+    }
 
     // Add to the parent view.
     tableRow.add(label1);
@@ -130,7 +140,7 @@ function fun_createTableDetailRow(rows, title, index) {
     // Create a Label.
     var label1 = Ti.UI.createLabel({
         text : title,
-         color : '#cc0000',
+        color : '#cc0000',
         font : {
             fontSize : defaultFontSize
         },
