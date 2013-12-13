@@ -155,7 +155,7 @@ function fun_createBottomViewBar() {
 //建立左边工具栏
 function fun_createLeftBar() {
     var _leftBar = Ti.UI.createImageView({
-        image : '/images/hdpi/leftBar.png',
+        image : '/images/return-btn_01.png',
         left : '12dip',
         height : '70%',
     });
@@ -176,6 +176,7 @@ function fun_createReturnLabel() {
     return _returnLabel;
 }
 
+//构造右侧主页Label
 function fun_createHomeLabel() {
     var _returnLabel = Ti.UI.createLabel({
         text : '主页',
@@ -189,22 +190,43 @@ function fun_createHomeLabel() {
     return _returnLabel;
 }
 
+//构造右侧主页按钮
+function fun_createHomeImg() {
+    var _returnLabel = Ti.UI.createImageView({
+        right : '22dip',
+        image : '/images/main-btn_01.png',
+    });
+    return _returnLabel;
+}
+
 //左侧返回按钮
 function fun_createReturnBtn(view, win) {
-    // var _leftBar=fun_createLeftBar();
-    var _returnLabel = fun_createReturnLabel();
-    // view.add(_leftBar);
-    var _HomeLabel = fun_createHomeLabel();
-    view.add(_returnLabel);
-    view.add(_HomeLabel);
-    _returnLabel.addEventListener('touchstart', function() {
+    var _leftBar=fun_createLeftBar();
+    var _rightBar=fun_createHomeImg();
+    // var _returnLabel = fun_createReturnLabel();
+    // var _HomeLabel = fun_createHomeLabel();
+    view.add(_leftBar);
+    view.add(_rightBar);
+   // view.add(_returnLabel);
+   // view.add(_HomeLabel);
+    _leftBar.addEventListener('touchstart', function() {
+        _leftBar.image='/images/return-btn_02.png';
         win.close();
     });
-    _HomeLabel.addEventListener('touchstart', function() {
+    _rightBar.addEventListener('touchstart', function() { 
+        _rightBar.image='/images/main-btn_02.png';
         var main = require('ui/main');
         var main_win = new main();
         main_win.open();
     });
+    // _returnLabel.addEventListener('touchstart', function() {
+        // win.close();
+    // });
+    // _HomeLabel.addEventListener('touchstart', function() {
+        // var main = require('ui/main');
+        // var main_win = new main();
+        // main_win.open();
+    // });
 }
 
 function fun_createMenuExitBar(win) {
