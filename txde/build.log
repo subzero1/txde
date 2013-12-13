@@ -1,130 +1,126 @@
 Logfile initialized
-[INFO] logfile = D:\Workspaces\Titanium\txde\build.log
-[INFO] logfile = D:\Workspaces\Titanium\txde\build.log
-[DEBUG] D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py emulator TXDE D:\Program File\Android-SDK\sdk D:\Workspaces\Titanium\txde com.netsky.txde 5 WVGA800 x86
-[DEBUG] D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Program File\Android-SDK\sdk D:\Workspaces\Titanium\txde com.netsky.txde 5 WVGA800
+[INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
+[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py emulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800 x86
+[INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
+[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800
 [INFO] Launching Android emulator...one moment
-[DEBUG] From: D:\Program File\Android-SDK\sdk\tools\emulator.exe
-[DEBUG] SDCard: C:\Users\liao\.titanium\android2.sdcard
-[DEBUG] AVD ID: 5
 [INFO] Building TXDE for Android ... one moment
+[DEBUG] From: D:\Android-SDK\sdk\tools\emulator.exe
+[DEBUG] SDCard: D:\Android-SDK\sdk\.titanium\android2.sdcard
+[DEBUG] AVD ID: 1
 [DEBUG] AVD Skin: WVGA800
 [DEBUG] AVD ABI: x86
-[DEBUG] SDK: D:\Program File\Android-SDK\sdk
-[INFO] Emulator is running.
+[DEBUG] SDK: D:\Android-SDK\sdk
 [INFO] Titanium SDK version: 3.1.2 (08/14/13 12:45 5ceaff8)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.061000 seconds on emulator to get ready
+[DEBUG] waited 0.380000 seconds on emulator to get ready
+[INFO] Emulator is running.
 [DEBUG] com.netsky.txde installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\android\appicon.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\appicon.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\android\default.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\default.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\app.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\barBackground.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\barBackground.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\ByBook.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\ByBook.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\De.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\De.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\arrow_left.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\arrow_left.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\de.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\de.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\exit.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\exit.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\headLogo.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\headLogo.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\jx.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\jx.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\reset.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\reset.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\searchBackground.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\searchBackground.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\searchTextBackground.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\searchTextBackground.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\yb.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\yb.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\hdpi\zc.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\hdpi\zc.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\Machine.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\Machine.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\main.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\main.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mainMenuItemBack.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mainMenuItemBack.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\Material.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\Material.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\de.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\de.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\exit.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\exit.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\headLogo.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\headLogo.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\jx.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\jx.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\yb.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\yb.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\mdpi\zc.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\mdpi\zc.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\Meter.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\Meter.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\right.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\right.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\Search.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\Search.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchBackground_01.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchBackground_01.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchByBook.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchByBook.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchByNumber.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchByNumber.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchTextBackground_03.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchTextBackground_03.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchTextBackground_04.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchTextBackground_04.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchTextBackground_05.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchTextBackground_05.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\searchTextBackground_06.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\searchTextBackground_06.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\images\tableTitleBackground.png => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\images\tableTitleBackground.png
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\service\user.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\service\user.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\TXDE.sqlite => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\TXDE.sqlite
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\basic\BasicMenuItem.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\basic\BasicMenuItem.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\basic\BasicTableList.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\basic\BasicTableList.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\basic\UI.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\basic\UI.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\main.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\main.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\decx\deDetailTabGroup.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\decx\deDetailTabGroup.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\decx\deQueryByBook.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\decx\deQueryByBook.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\decx\deResult.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\decx\deResult.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\decx\DeSearch.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\decx\DeSearch.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\Detail.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\Detail.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\DE_Detail.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\DE_Detail.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\DE_ListWindow.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\DE_ListWindow.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\ListWindow.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\ListWindow.js
-[TRACE] COPYING CREATED FILE: D:\Workspaces\Titanium\txde\Resources\ui\window\TabListWindow.js => D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\ui\window\TabListWindow.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\appicon.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\appicon.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\default.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\app.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\barBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\barBackground.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\ByBook.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\ByBook.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\De.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\De.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\arrow_left.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\arrow_left.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\de.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\de.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\exit.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\exit.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\headLogo.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\headLogo.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\jx.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\jx.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\reset.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\reset.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\searchBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\searchBackground.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\searchTextBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\searchTextBackground.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\yb.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\yb.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\zc.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\zc.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Machine.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Machine.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\main.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\main.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mainMenuItemBack.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mainMenuItemBack.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Material.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Material.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\de.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\de.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\exit.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\exit.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\headLogo.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\headLogo.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\jx.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\jx.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\yb.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\yb.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\zc.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\zc.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Meter.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Meter.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\right.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\right.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Search.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Search.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchBackground_01.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchBackground_01.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchByBook.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchByBook.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchByNumber.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchByNumber.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchTextBackground_03.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchTextBackground_03.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchTextBackground_04.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchTextBackground_04.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchTextBackground_05.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchTextBackground_05.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchTextBackground_06.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchTextBackground_06.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\tableTitleBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\tableTitleBackground.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\service\user.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\service\user.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\TXDE.sqlite => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\TXDE.sqlite
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\basic\BasicMenuItem.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\basic\BasicMenuItem.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\basic\BasicTableList.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\basic\BasicTableList.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\basic\UI.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\basic\UI.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\main.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\main.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\decx\deDetailTabGroup.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\decx\deDetailTabGroup.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\decx\deQueryByBook.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\decx\deQueryByBook.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\decx\deResult.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\decx\deResult.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\decx\DeSearch.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\decx\DeSearch.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\Detail.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\Detail.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\DE_Detail.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\DE_Detail.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\DE_ListWindow.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\DE_ListWindow.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\ListWindow.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\ListWindow.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\ui\window\TabListWindow.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\ui\window\TabListWindow.js
 [DEBUG] LiveView not enabled
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-hdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-long-land-hdpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-ldpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-long-land-ldpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-hdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-long-port-hdpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-ldpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-long-port-ldpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-hdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-hdpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-ldpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-ldpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-mdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-mdpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-hdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-hdpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-ldpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-ldpi\default_d44e27d97b.png
-[TRACE] COPYING FILE: D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-mdpi\default.png => D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-mdpi\default_d44e27d97b.png
-[DEBUG] app stylesheet => D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\ApplicationStylesheet.java
-[DEBUG] copying app icon: D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\appicon.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-hdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-land-hdpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-ldpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-land-ldpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-hdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-port-hdpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-ldpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-port-ldpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-hdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-hdpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-ldpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-ldpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-mdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-mdpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-hdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-hdpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-ldpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-ldpi\default_d44e27d97b.png
+[TRACE] COPYING FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-mdpi\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-mdpi\default_d44e27d97b.png
+[DEBUG] app stylesheet => D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\ApplicationStylesheet.java
+[DEBUG] copying app icon: D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\appicon.png
 [DEBUG] generating theme.xml
-[DEBUG] found drawable-long-land-hdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-hdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-long-land-hdpi\background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-long-land-ldpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-long-land-ldpi\background.png
-[DEBUG] found drawable-long-port-hdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-hdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-long-port-hdpi\background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-long-port-ldpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-long-port-ldpi\background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-hdpi\background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-ldpi\background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-land-mdpi\background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-hdpi\background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-ldpi\background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying D:\Workspaces\Titanium\txde\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to D:\Workspaces\Titanium\txde\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at D:\Workspaces\Titanium\txde\build\android\bin\assets\Resources\default.png
+[DEBUG] found drawable-long-land-hdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-hdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-land-ldpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-hdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-long-port-ldpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying D:\Titanium_Studio_Workspace\TXDE\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to D:\Titanium_Studio_Workspace\TXDE\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\default.png
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\ApplicationStylesheet.java to javac build list
-[DEBUG] adding D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\R.java to javac build list
-[DEBUG] adding D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\TxdeActivity.java to javac build list
-[DEBUG] adding D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\TxdeAppInfo.java to javac build list
-[DEBUG] adding D:\Workspaces\Titanium\txde\build\android\gen\com\netsky\txde\TxdeApplication.java to javac build list
-[DEBUG] Building Java Sources: "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\ApplicationStylesheet.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\R.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeActivity.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeAppInfo.java" "D:\\Workspaces\\Titanium\\txde\\build\\android\\gen\\com\\netsky\\txde\\TxdeApplication.java"
+[DEBUG] adding D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\ApplicationStylesheet.java to javac build list
+[DEBUG] adding D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\R.java to javac build list
+[DEBUG] adding D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\TxdeActivity.java to javac build list
+[DEBUG] adding D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\TxdeAppInfo.java to javac build list
+[DEBUG] adding D:\Titanium_Studio_Workspace\TXDE\build\android\gen\com\netsky\txde\TxdeApplication.java to javac build list
+[DEBUG] Building Java Sources: "D:\\Titanium_Studio_Workspace\\TXDE\\build\\android\\gen\\com\\netsky\\txde\\ApplicationStylesheet.java" "D:\\Titanium_Studio_Workspace\\TXDE\\build\\android\\gen\\com\\netsky\\txde\\R.java" "D:\\Titanium_Studio_Workspace\\TXDE\\build\\android\\gen\\com\\netsky\\txde\\TxdeActivity.java" "D:\\Titanium_Studio_Workspace\\TXDE\\build\\android\\gen\\com\\netsky\\txde\\TxdeAppInfo.java" "D:\\Titanium_Studio_Workspace\\TXDE\\build\\android\\gen\\com\\netsky\\txde\\TxdeApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
-[ERROR] Failed installing com.netsky.txde: 	pkg: /data/local/tmp/app.apk
-Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]
-rm failed for /data/local/tmp/app.apk, No such file or directory
-
-[DEBUG] creating unsigned apk: D:\Workspaces\Titanium\txde\build\android\bin\app-unsigned.apk
+[DEBUG] creating unsigned apk: D:\Titanium_Studio_Workspace\TXDE\build\android\bin\app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/images/hdpi/arrow_left.png
 [DEBUG] from resource zip => assets/Resources/images/hdpi/de.png
 [DEBUG] from resource zip => assets/Resources/images/hdpi/exit.png
@@ -209,34 +205,34 @@ rm failed for /data/local/tmp/app.apk, No such file or directory
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/default_d44e27d97b.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/default_d44e27d97b.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_64.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR D:\Program File\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_64.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.054000 seconds on emulator to get ready
+[DEBUG] waited 0.363000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TXDE
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }
