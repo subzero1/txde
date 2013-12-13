@@ -133,7 +133,7 @@ function fun_createResetButton() {
 function fun_createHeadViewBar() {
     var _headView = Ti.UI.createView({
         top : 0,
-        height : '40dip',
+        height : '48dip',
         // backgroundColor : '#dbdabb',
         zIndex : '1',
         backgroundImage : '/images/barBackground.png'
@@ -145,7 +145,7 @@ function fun_createHeadViewBar() {
 function fun_createBottomViewBar() {
     var _view = Ti.UI.createView({
         bottom : 0,
-        height : '40dip',
+        height : '48dip',
         backgroundImage : '/images/barBackground.png',
         zIndex : '1'
     });
@@ -157,7 +157,8 @@ function fun_createLeftBar() {
     var _leftBar = Ti.UI.createImageView({
         image : '/images/return-btn_01.png',
         left : '12dip',
-        height : '70%',
+        width:'67dip',
+        height : '38dip',
     });
     return _leftBar;
 }
@@ -194,6 +195,8 @@ function fun_createHomeLabel() {
 function fun_createHomeImg() {
     var _returnLabel = Ti.UI.createImageView({
         right : '22dip',
+        width:'72dip',
+        height : '40dip',
         image : '/images/main-btn_01.png',
     });
     return _returnLabel;

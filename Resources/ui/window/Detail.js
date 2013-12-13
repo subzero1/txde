@@ -14,7 +14,7 @@ function Detail(tableName) {
     var headView = fun_createHeadViewBar();
     var tableView = Titanium.UI.createTableView({
         backgroundColor : 'white',
-        top : '50dip',
+        top : '48dip',
     });
     var deDataSet = [];
     var i = 0; 
