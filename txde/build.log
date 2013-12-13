@@ -1,19 +1,20 @@
 Logfile initialized
 [INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
-[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800
-[INFO] Building TXDE for Android ... one moment
+[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py emulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800 x86
+[INFO] Launching Android emulator...one moment
 [DEBUG] From: D:\Android-SDK\sdk\tools\emulator.exe
 [DEBUG] SDCard: D:\Android-SDK\sdk\.titanium\android2.sdcard
 [DEBUG] AVD ID: 1
 [DEBUG] AVD Skin: WVGA800
 [DEBUG] AVD ABI: x86
+[INFO] Building TXDE for Android ... one moment
 [DEBUG] SDK: D:\Android-SDK\sdk
 [INFO] Titanium SDK version: 3.1.2 (08/14/13 12:45 5ceaff8)
 [DEBUG] Waiting for device to be ready ...
+[INFO] Emulator is running.
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.424000 seconds on emulator to get ready
-[INFO] Emulator is running.
+[DEBUG] waited 0.388000 seconds on emulator to get ready
 [DEBUG] com.netsky.txde installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
@@ -237,7 +238,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.759000 seconds on emulator to get ready
+[DEBUG] waited 0.385000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TXDE
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }
