@@ -1,22 +1,13 @@
 Logfile initialized
 [INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
-[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py emulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800 x86
-[INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
 [DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800
-[INFO] Launching Android emulator...one moment
-[DEBUG] From: D:\Android-SDK\sdk\tools\emulator.exe
-[DEBUG] SDCard: D:\Android-SDK\sdk\.titanium\android2.sdcard
 [INFO] Building TXDE for Android ... one moment
-[DEBUG] AVD ID: 1
-[DEBUG] AVD Skin: WVGA800
-[DEBUG] AVD ABI: x86
-[DEBUG] SDK: D:\Android-SDK\sdk
-[INFO] Emulator is running.
 [INFO] Titanium SDK version: 3.1.2 (08/14/13 12:45 5ceaff8)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.376000 seconds on emulator to get ready
+[DEBUG] waited 0.424000 seconds on emulator to get ready
+[INFO] Emulator is running.
 [DEBUG] com.netsky.txde installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
@@ -56,6 +47,7 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\right.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\right.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Search.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Search.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchBackground_01.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchBackground_01.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchBackground_01_1.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchBackground_01_1.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchByBook.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchByBook.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchByNumber.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchByNumber.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchTextBackground_03.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchTextBackground_03.png
@@ -156,6 +148,7 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/return-btn_02.png
 [DEBUG] from resource zip => assets/Resources/images/right.png
 [DEBUG] from resource zip => assets/Resources/images/searchBackground_01.png
+[DEBUG] from resource zip => assets/Resources/images/searchBackground_01_1.png
 [DEBUG] from resource zip => assets/Resources/images/searchByBook.png
 [DEBUG] from resource zip => assets/Resources/images/searchByNumber.png
 [DEBUG] from resource zip => assets/Resources/images/searchTextBackground_03.png
@@ -240,7 +233,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.354000 seconds on emulator to get ready
+[DEBUG] waited 0.364000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TXDE
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }

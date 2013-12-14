@@ -66,7 +66,7 @@ function su_getUserLocation() {
 
 //获取用户设备的各个参数
 function su_userLog(latitude, longitude, location) {
-    // var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
+     //var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
     var url = "http://tjnetsky.web.myjhost.net/gys/mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
@@ -121,6 +121,7 @@ function su_isFirstInstall() {
         firstInstall = rows.field(1);
         rows.next();
     }
+    Ti.API.info("是否第一次："+firstInstall);
     return firstInstall;
     db.close();
 }
@@ -131,7 +132,7 @@ function su_updateInstallInfo() {
     var currentDate = new Date();
     var dateString = currentDate.getFullYear() + '-' + currentDate.getMonth() + '-' + currentDate.getDate();
     dateString += ' ' + currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
-    var sql = "update TX_APP set first_install='true',install_time='"+dateString+"' where id=1 ";
+    var sql = "update TX_APP set first_install='1',install_time='"+dateString+"' where id=1 ";
     Ti.API.info('SQL:'+sql);
     db.execute(sql);
     db.close();
