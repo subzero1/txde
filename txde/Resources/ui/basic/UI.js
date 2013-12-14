@@ -72,10 +72,13 @@ function fun_createBackButton(win) {
         top : '0',
         width : '62dip',
         height : '100%',
-        // backgroundColor:'green'
     });
-    _arrow_left.addEventListener('click', function() {
+    _arrow_left.addEventListener('touchstart', function() {
+         _arrow_left.image='/images/searchBackground_01_1.png';
+    }); 
+    _arrow_left.addEventListener('touchend', function() { 
         win.close();
+         _arrow_left.image='/images/searchBackground_01.png';
     });
     return _arrow_left;
 }
@@ -214,10 +217,19 @@ function fun_createReturnBtn(view, win) {
    // view.add(_HomeLabel);
     _leftBar.addEventListener('touchstart', function() {
         _leftBar.image='/images/return-btn_02.png';
+    });
+    _leftBar.addEventListener('touchend', function() {
         win.close();
+        _leftBar.image='/images/return-btn_01.png';
     });
     _rightBar.addEventListener('touchstart', function() { 
         _rightBar.image='/images/main-btn_02.png';
+        var main = require('ui/main');
+        var main_win = new main();
+        main_win.open();
+    });
+    _rightBar.addEventListener('touchend', function() { 
+        _rightBar.image='/images/main-btn_01.png';
         var main = require('ui/main');
         var main_win = new main();
         main_win.open();
