@@ -159,48 +159,20 @@ function fun_createBottomViewBar() {
 function fun_createLeftBar() {
     var _leftBar = Ti.UI.createImageView({
         image : '/images/return-btn_01.png',
-        left : '12dip',
+        left : '8dip',
         width:'67dip',
         height : '38dip',
     });
     return _leftBar;
 }
 
-function fun_createReturnLabel() {
-    var _returnLabel = Ti.UI.createLabel({
-        text : '返回',
-        left : '22dip',
-        font : {
-            fontFamily : 'Arial',
-            fontSize : '18dip',
-        },
-        color : 'black',
-        zIndex : '2'
-    });
-    return _returnLabel;
-}
-
-//构造右侧主页Label
-function fun_createHomeLabel() {
-    var _returnLabel = Ti.UI.createLabel({
-        text : '主页',
-        right : '22dip',
-        font : {
-            fontFamily : 'Arial',
-            fontSize : '18dip',
-        },
-        color : 'black'
-    });
-    return _returnLabel;
-}
-
 //构造右侧主页按钮
 function fun_createHomeImg() {
     var _returnLabel = Ti.UI.createImageView({
-        right : '22dip',
+        right : '0',
         width:'72dip',
         height : '40dip',
-        image : '/images/main-btn_01.png',
+        image : '/images/main-btn_01.png', 
     });
     return _returnLabel;
 }
@@ -209,12 +181,8 @@ function fun_createHomeImg() {
 function fun_createReturnBtn(view, win) {
     var _leftBar=fun_createLeftBar();
     var _rightBar=fun_createHomeImg();
-    // var _returnLabel = fun_createReturnLabel();
-    // var _HomeLabel = fun_createHomeLabel();
     view.add(_leftBar);
     view.add(_rightBar);
-   // view.add(_returnLabel);
-   // view.add(_HomeLabel);
     _leftBar.addEventListener('touchstart', function() {
         _leftBar.image='/images/return-btn_02.png';
     });

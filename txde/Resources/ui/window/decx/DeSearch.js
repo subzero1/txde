@@ -13,8 +13,8 @@ var tableView = Ti.UI.createTableView({
     width : '95%',
     height : '119dip',
 });
-tableData.push(bmi_createMenuItemTableRow('/images/searchByNumber.png', '编号或名称', '输入定额编号或名称查询定额', 1));
-tableData.push(bmi_createMenuItemTableRow('/images/searchByBook.png', '册章节查询', '选择相应的册,章,节编号查询', 2));
+tableData.push(bmi_createMenuItemTableRow('/images/searchByNumber.png', '编号或名称', '', 5));
+tableData.push(bmi_createMenuItemTableRow('/images/searchByBook.png', '册章节查询', '', 6));
 tableView.data = tableData;
 //返回按钮
 scrollView.add(tableView);

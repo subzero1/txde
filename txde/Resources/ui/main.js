@@ -21,10 +21,14 @@ function main() {
 		width : '95%',
 		height : '237dip',
 	});
-	tableData.push(bmi_createMenuItemTableRow('/images/De.png', '定额查询', '定额库相关信息', 1));
-	tableData.push(bmi_createMenuItemTableRow('/images/Material.png', '材料查询', '材料信息,按编号或者名称查询', 2));
-	tableData.push(bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '机械信息,按编号或者名称查询', 3));
-	tableData.push(bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '仪表信息,按编号或者名称查询', 4));
+	var decxRow=bmi_createMenuItemTableRow('/images/De.png', '定额查询', '', 1);
+	var clcxRow=bmi_createMenuItemTableRow('/images/Material.png', '材料查询', '', 2);
+	var jxcxRow=bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '', 3);
+	var ybcxRow=bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '', 4);
+    tableData.push(decxRow);
+	tableData.push(clcxRow);
+	tableData.push(jxcxRow);
+	tableData.push(ybcxRow);
 	tableView.data = tableData;
 
 	//左上角logo
@@ -75,5 +79,4 @@ function main() {
 	fun_createMenuBottomBar(win);
 	return win;
 };
-su_getUserLocation();
 module.exports = main;

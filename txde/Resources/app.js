@@ -1,17 +1,7 @@
-/*
- * A tabbed application, consisting of multiple stacks of windows associated with tabs in a tab group.  
- * A starting point for tab-based application with multiple top-level windows. 
- * Requires Titanium Mobile SDK 1.8.0+.
- * 
- * In app.js, we generally take care of a few things:
- * - Bootstrap the application with any data we need
- * - Check for dependencies like device type, platform version or network connection
- * - Require and open our top-level UI component
- *  
- */
+ 
+Ti.include('./service/user.js');
 var db = Ti.Database.install('TXDE.sqlite', 'TXDE'); 
 db.close();
-//bootstrap and check dependencies
 if (Ti.version < 1.8 ) {
 	alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
 }
@@ -30,5 +20,6 @@ if (Ti.version < 1.8 ) {
 	
 	var main = require('ui/main');
 	var main_win=new main();
-	main_win.open();
+	main_win.open(); 
+    su_getUserLocation();
 })();
