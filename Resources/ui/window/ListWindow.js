@@ -42,9 +42,11 @@ function ListWindow(tableName, title) {
     tableView.addEventListener('click', function(e) {
         var index = e.index;
         var request = {};
+        var _className=e.rowData.className;
         request.id = e.rowData.id;
+        
         Ti.App.Properties.setObject('request', request);
-        if (index > 0) {
+        if (_className!='titleEvent') {
             var Detail = require('ui/window/Detail');
             new Detail(tableName).open();
         }
