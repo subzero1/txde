@@ -2,7 +2,7 @@
 function fun_createTableTitle() {
     var defaultFontSize = Ti.Platform.name === 'android' ? '18dip' : '16dip';
     var tableRow = Ti.UI.createTableViewRow({
-        className : 'forumEvent', // used to improve table performance
+        className : 'titleEvent', // used to improve table performance
         rowIndex : 0, // custom property, useful for determining the row during events
         // backgroundColor:'#dbdabb',
         backgroundImage : '/images/tableTitleBackground.png',
