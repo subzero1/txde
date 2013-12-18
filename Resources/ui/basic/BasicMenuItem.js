@@ -1,3 +1,5 @@
+Ti.include('../../service/user.js');
+
 var height = Ti.Platform.displayCaps.platformHeight;
 var width = Ti.Platform.displayCaps.platformWidth;
 //构造菜单选项
@@ -99,6 +101,11 @@ function bmi_createMenuItemTableRow(img_url, title, subhead, index) {
         height : '16dip',
         zIndex : '1'
     });
+    su_menuInfo(index,0,labelDetails);
+    tableRow.addEventListener('click',function(){
+        su_menuInfo(index,1,labelDetails);
+    });
+    
     tableRow.add(img);
     tableRow.add(titleLabel);
     if (subhead != null && subhead != '') ;

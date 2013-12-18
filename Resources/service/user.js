@@ -66,8 +66,8 @@ function su_getUserLocation() {
 
 //获取用户设备的各个参数
 function su_userLog(latitude, longitude, location) {
-     //var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
-    var url = "http://tjnetsky.web.myjhost.net/gys/mobile/userLog.do";
+    var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
+    //var url = "http://tjnetsky.web.myjhost.net/gys/mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             Ti.API.info("Received text: " + this.responseText);
@@ -125,8 +125,9 @@ function su_isFirstInstall() {
     return firstInstall;
     db.close();
 }
-
-//更新安装信息
+/**
+ *更新安装信息 
+ */
 function su_updateInstallInfo() {
     var db = Ti.Database.open('TXDE');
     var currentDate = new Date();
@@ -136,4 +137,51 @@ function su_updateInstallInfo() {
     Ti.API.info('SQL:'+sql);
     db.execute(sql);
     db.close();
+}
+
+//搜集使用用户的使用情况
+/**
+ * 
+ * @param {Object} menu 菜单index
+ * @param {Object} opp 操作，0表示不更新数据库，1表示更新
+ * @param {Object} label   设置显示的label
+ */
+function su_menuInfo (menu,opp,label) {
+    var url = "http://192.168.0.132:8080/gys/mobile/menuCount.do";
+    //var url = "http://tjnetsky.web.myjhost.net/gys/mobile/menuCount.do";
+    var json;
+    var client = Ti.Network.createHTTPClient({
+        onload : function(e) {
+            Ti.API.info("AJAX返回信息: " + this.responseText);
+            if (this.responseText == 'false'||this.responseText=='0'||this.responseText==null) {
+                json= this.responseText;
+            }else{
+                json=JSON.parse(this.responseText);
+                if (menu==1) {
+                    label.text='点击量：'+json.menux.menu1;
+                }else if(menu==2){
+                    label.text='点击量：'+json.menux.menu2;
+                }else if(menu==3){
+                    label.text='点击量：'+json.menux.menu3;
+                }else if(menu==4){
+                    label.text='点击量：'+json.menux.menu4;
+                }else if(menu==5){
+                    label.text='点击量：'+json.menux.menu5;
+                }else if(menu==6){
+                    label.text='点击量：'+json.menux.menu6;
+                }; 
+            };
+        },
+        onerror : function(e) {
+            Ti.API.info('****************************************************:' + e.error);
+        },
+        timeout : 5000 // in milliseconds
+    });
+    client.open("GET", url);
+    var param = {
+        'menu' : menu,
+        'opp':opp
+    };
+    client.send(param);
+    return json;
 }
