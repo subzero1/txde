@@ -15,7 +15,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.486000 seconds on emulator to get ready
+[DEBUG] waited 0.428000 seconds on emulator to get ready
 [INFO] Emulator is running.
 [DEBUG] com.netsky.txde installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
@@ -242,7 +242,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.362000 seconds on emulator to get ready
+[DEBUG] waited 0.431000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TXDE
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }

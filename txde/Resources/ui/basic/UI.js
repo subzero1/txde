@@ -192,9 +192,6 @@ function fun_createReturnBtn(view, win) {
     });
     _rightBar.addEventListener('touchstart', function() { 
         _rightBar.image='/images/main-btn_02.png';
-        var main = require('ui/main');
-        var main_win = new main();
-        main_win.open();
     });
     _rightBar.addEventListener('touchend', function() { 
         _rightBar.image='/images/main-btn_01.png';
@@ -202,18 +199,6 @@ function fun_createReturnBtn(view, win) {
         var main_win = new main();
         main_win.open();
     });
-    // _returnLabel.addEventListener('touchstart', function() {
-        // win.close();
-    // });
-    // _HomeLabel.addEventListener('touchstart', function() {
-        // var main = require('ui/main');
-        // var main_win = new main();
-        // main_win.open();
-    // });
-}
-
-function fun_createMenuExitBar(win) {
-
 }
 
 //建立Menu贱

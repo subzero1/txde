@@ -66,8 +66,8 @@ function su_getUserLocation() {
 
 //获取用户设备的各个参数
 function su_userLog(latitude, longitude, location) {
-    var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
-    //var url = "http://tjnetsky.web.myjhost.net/gys/mobile/userLog.do";
+    //var url = "http://192.168.0.132:8080/gys/mobile/userLog.do";
+    var url = "http://www.txgys.com.cn/mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             Ti.API.info("Received text: " + this.responseText);
@@ -147,8 +147,8 @@ function su_updateInstallInfo() {
  * @param {Object} label   设置显示的label
  */
 function su_menuInfo (menu,opp,label) {
-    var url = "http://192.168.0.132:8080/gys/mobile/menuCount.do";
-    //var url = "http://tjnetsky.web.myjhost.net/gys/mobile/menuCount.do";
+    //var url = "http://192.168.0.132:8080/gys/mobile/menuCount.do";
+    var url = "http://www.txgys.com.cn/mobile/menuCount.do";
     var json;
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
