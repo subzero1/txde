@@ -105,6 +105,7 @@ function su_userLog(latitude, longitude, location) {
         'longitude' : longitude,
         'latitude' : latitude,
         'first_install' : su_isFirstInstall(),
+        'session_id':Ti.App.sessionId
     };
     client.send(param);
 }
