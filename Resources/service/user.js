@@ -75,6 +75,7 @@ function su_userLog(latitude, longitude, location) {
             if (this.responseText == 'false'||this.responseText=='0'||this.responseText==null) {
                 Ti.API.info('----------------------------------------:update-pre');
                 su_updateInstallInfo();
+                client=null;
             };
         },
         // function called when an error occurs, including a timeout
