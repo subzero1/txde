@@ -1,6 +1,6 @@
 //通过GPS定位得到地点,经纬度
-//var request_url='http://192.168.1.107:8080/gys/';
-var request_url='http://www.txgys.com.cn/';
+var request_url='http://192.168.1.102:8080/gys/';
+//var request_url='http://www.txgys.com.cn/';
 function su_getUserLocation() {
 
     Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
@@ -71,8 +71,9 @@ function su_userLog(latitude, longitude, location) {
     var url = request_url+"mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
-            Ti.API.info("Received text: " + this.responseText);
+            Ti.API.info("return string --------------------------------------: " + this.responseText);
             if (this.responseText == 'false'||this.responseText=='0'||this.responseText==null) {
+                Ti.API.info('----------------------------------------:update-pre');
                 su_updateInstallInfo();
             };
         },
@@ -131,6 +132,7 @@ function su_isFirstInstall() {
  *更新安装信息 
  */
 function su_updateInstallInfo() {
+    Ti.API.info('----------------------------------------:update');
     var db = Ti.Database.open('TXDE');
     var currentDate = new Date();
     var dateString = currentDate.getFullYear() + '-' + currentDate.getMonth() + '-' + currentDate.getDate();
