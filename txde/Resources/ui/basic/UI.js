@@ -3,6 +3,7 @@ var osname = Ti.Platform.osname;
 var version = Ti.Platform.version;
 var height = Ti.Platform.displayCaps.platformHeight;
 var width = Ti.Platform.displayCaps.platformWidth;
+var animationsOn=true;
 
 function fun_createBHMCTextField(top) {//按定额编号查询
     var _bhmc = Titanium.UI.createTextField({
@@ -234,4 +235,75 @@ function ui_getDimension() {
     ;
     return dimension + '/';
 }
+
+//建立启动动画页面
+function ui_createPreScrollableView(win,main_win) {
+    var img1 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre1.png',
+        width : '480dip',
+        height : '800dip'
+    });
+    var img2 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre2.png',
+        width : '100%',
+        height : '100%'
+    });
+    var img3 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre3.png',
+        width : '100%',
+        height : '100%'
+    });
+    var view1 = Ti.UI.createView({
+    });
+    var view2 = Ti.UI.createView({
+    });
+    var view3 = Ti.UI.createView({
+        opacity : '0.75'
+    });
+    view1.add(img1);
+    view2.add(img2);
+    view3.add(img3);
+    var img1 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre1.png',
+        width : '480dip',
+        height : '800dip'
+    });
+    var img2 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre2.png',
+        width : '100%',
+        height : '100%'
+    });
+    var img3 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre3.png',
+        width : '100%',
+        height : '100%'
+    });
+    var view1 = Ti.UI.createView({
+    });
+    var view2 = Ti.UI.createView({
+    });
+    var view3 = Ti.UI.createView({
+        opacity : '0.75'
+    });
+    view1.add(img1);
+    view2.add(img2);
+    view3.add(img3);
+    view3.addEventListener('click', function(e) {
+        if (animationsOn) {
+            setTimeout(function() {
+                main_win.animate(Ti.UI.createAnimation({
+                    opacity : 1,
+                    duration : 4000
+                }));
+            }, 2000);
+        }
+        win.add(main_win);
+    });
+    var scrollableView = Ti.UI.createScrollableView({
+        views : [view1, view2, view3],
+        showPagingControl : false
+    });
+    return scrollableView; 
+}
+
 
