@@ -1,6 +1,6 @@
 //通过GPS定位得到地点,经纬度
 //var request_url='http://192.168.1.102:8080/gys/';
-var request_url='http://www.txgys.com.cn/';
+var request_url = 'http://www.txgys.com.cn/';
 function su_getUserLocation() {
 
     Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
@@ -68,14 +68,14 @@ function su_getUserLocation() {
 
 //获取用户设备的各个参数
 function su_userLog(latitude, longitude, location) {
-    var url = request_url+"mobile/userLog.do";
+    var url = request_url + "mobile/userLog.do";
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             Ti.API.info("return string --------------------------------------: " + this.responseText);
-            if (this.responseText == 'false'||this.responseText=='0'||this.responseText==null) {
+            if (this.responseText == 'false' || this.responseText == '0' || this.responseText == null) {
                 Ti.API.info('----------------------------------------:update-pre');
                 su_updateInstallInfo();
-                client=null;
+                client = null;
             };
         },
         // function called when an error occurs, including a timeout
@@ -108,7 +108,7 @@ function su_userLog(latitude, longitude, location) {
         'longitude' : longitude,
         'latitude' : latitude,
         'first_install' : su_isFirstInstall(),
-        'session_id':Ti.App.sessionId
+        'session_id' : Ti.App.sessionId
     };
     client.send(param);
 }
@@ -125,12 +125,13 @@ function su_isFirstInstall() {
         firstInstall = rows.field(1);
         rows.next();
     }
-    Ti.API.info("是否第一次："+firstInstall);
+    Ti.API.info("是否第一次：" + firstInstall);
     return firstInstall;
     db.close();
 }
+
 /**
- *更新安装信息 
+ *更新安装信息
  */
 function su_updateInstallInfo() {
     Ti.API.info('----------------------------------------:update');
@@ -138,42 +139,43 @@ function su_updateInstallInfo() {
     var currentDate = new Date();
     var dateString = currentDate.getFullYear() + '-' + currentDate.getMonth() + '-' + currentDate.getDate();
     dateString += ' ' + currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
-    var sql = "update TX_APP set first_install='1',install_time='"+dateString+"' where id=1 ";
-    Ti.API.info('SQL:'+sql);
+    var sql = "update TX_APP set first_install='1',install_time='" + dateString + "' where id=1 ";
+    Ti.API.info('SQL:' + sql);
     db.execute(sql);
     db.close();
 }
 
 //搜集使用用户的使用情况
 /**
- * 
+ *
  * @param {Object} menu 菜单index
  * @param {Object} opp 操作，0表示不更新数据库，1表示更新
  * @param {Object} label   设置显示的label
  */
-function su_menuInfo (menu,opp,label) {
-    var url = request_url+"mobile/menuCount.do";
+function su_menuInfo(menu, opp, label) {
+    var url = request_url + "mobile/menuCount.do";
     var json;
     var client = Ti.Network.createHTTPClient({
         onload : function(e) {
             Ti.API.info("AJAX返回信息: " + this.responseText);
-            if (this.responseText == 'false'||this.responseText=='0'||this.responseText==null) {
-                json= this.responseText;
-            }else{
-                json=JSON.parse(this.responseText);
-                if (menu==1) {
-                    label.text='点击量：'+json.menux.menu1;
-                }else if(menu==2){
-                    label.text='点击量：'+json.menux.menu2;
-                }else if(menu==3){
-                    label.text='点击量：'+json.menux.menu3;
-                }else if(menu==4){
-                    label.text='点击量：'+json.menux.menu4;
-                }else if(menu==5){
-                    label.text='点击量：'+json.menux.menu5;
-                }else if(menu==6){
-                    label.text='点击量：'+json.menux.menu6;
-                }; 
+            if (this.responseText == 'false' || this.responseText == '0' || this.responseText == null) {
+                json = this.responseText;
+            } else {
+                json = JSON.parse(this.responseText);
+                if (menu == 1) {
+                    label.text = '点击量：' + json.menux.menu1;
+                } else if (menu == 2) {
+                    label.text = '点击量：' + json.menux.menu2;
+                } else if (menu == 3) {
+                    label.text = '点击量：' + json.menux.menu3;
+                } else if (menu == 4) {
+                    label.text = '点击量：' + json.menux.menu4;
+                } else if (menu == 5) {
+                    label.text = '点击量：' + json.menux.menu5;
+                } else if (menu == 6) {
+                    label.text = '点击量：' + json.menux.menu6;
+                }
+                ;
             };
         },
         onerror : function(e) {
@@ -184,8 +186,66 @@ function su_menuInfo (menu,opp,label) {
     client.open("GET", url);
     var param = {
         'menu' : menu,
-        'opp':opp
+        'opp' : opp
     };
     client.send(param);
     return json;
 }
+/**
+ * 根据路径标签得到单签版本
+ * @param {Object} path
+ * @param {Object} tagName
+ */
+function ui_getElementsByTagName(path,tagName) {
+    var file = Ti.Filesystem.getFile(path);
+    var xmltext = file.read().text;
+    var doc = Ti.XML.parseString(xmltext);
+    var str = doc.documentElement.getElementsByTagName(tagName).item(0).text;
+    return str;
+}
+
+/**
+ * 当前版本
+ */
+function u_getCurrentVersion() {
+    Ti.API.info('----------------------------------------:update');
+    var db = Ti.Database.open('TXDE');
+    var version='';
+    var sql = "select version from TX_APP  where id=1 ";
+    Ti.API.info('SQL:' + sql);
+    var row=db.execute(sql);
+    while(row.isValidRow){
+        version=row.field(0);
+    }
+    return version;
+    db.close();
+}
+
+/**
+ * 更新当前版本
+ */
+function u_setCurrentVersion() {
+    Ti.API.info('----------------------------------------:update');
+    var db = Ti.Database.open('TXDE');
+    var version='';
+    var sql = "update TX_APP  set version="+ui_getElementsByTagName('../tiapp.xml','version')+"where id=1 ";
+    Ti.API.info('SQL:' + sql);
+    var row=db.execute(sql);
+    while(row.isValidRow){
+        version=row.field(0);
+    }
+    return version;
+    db.close();
+}
+
+/**
+ * 是否新版本
+ */
+function u_checkVersion () {
+  var opp=false;
+  if (u_getCurrentVersion()!=ui_getElementsByTagName('../tiapp.xml','version')) {
+      opp=true;
+      u_setCurrentVersion();
+  } 
+}
+

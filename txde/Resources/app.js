@@ -9,7 +9,6 @@ if (Ti.version < 1.8) {
 
 // This is a single context application with mutliple windows in a stack
 (function() {
-    isFirst='0';
     Ti.API.info('-=-=-=-==-==-=-=-=-===============:'+isFirst);
     if (isFirst == "1") {
         var main = require('ui/main');

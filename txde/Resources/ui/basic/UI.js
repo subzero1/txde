@@ -3,7 +3,7 @@ var osname = Ti.Platform.osname;
 var version = Ti.Platform.version;
 var height = Ti.Platform.displayCaps.platformHeight;
 var width = Ti.Platform.displayCaps.platformWidth;
-var animationsOn=true;
+var animationsOn = true;
 
 function fun_createBHMCTextField(top) {//按定额编号查询
     var _bhmc = Titanium.UI.createTextField({
@@ -75,11 +75,11 @@ function fun_createBackButton(win) {
         height : '100%',
     });
     _arrow_left.addEventListener('touchstart', function() {
-         _arrow_left.image='/images/searchBackground_01_1.png';
-    }); 
-    _arrow_left.addEventListener('touchend', function() { 
+        _arrow_left.image = '/images/searchBackground_01_1.png';
+    });
+    _arrow_left.addEventListener('touchend', function() {
         win.close();
-         _arrow_left.image='/images/searchBackground_01.png';
+        _arrow_left.image = '/images/searchBackground_01.png';
     });
     return _arrow_left;
 }
@@ -110,9 +110,9 @@ function ui_searchTextStyle(view) {
         zIndex : -2,
         left : '100dip',
         right : '42dip',
-        width:'200dip',
+        width : '200dip',
         top : '0dip',
-        bottom:'0dip',
+        bottom : '0dip',
         height : '54dip',
         // backgroundColor:'yellow'
     });
@@ -161,7 +161,7 @@ function fun_createLeftBar() {
     var _leftBar = Ti.UI.createImageView({
         image : '/images/return-btn_01.png',
         left : '8dip',
-        width:'67dip',
+        width : '67dip',
         height : '38dip',
     });
     return _leftBar;
@@ -171,31 +171,31 @@ function fun_createLeftBar() {
 function fun_createHomeImg() {
     var _returnLabel = Ti.UI.createImageView({
         right : '0',
-        width:'72dip',
+        width : '72dip',
         height : '40dip',
-        image : '/images/main-btn_01.png', 
+        image : '/images/main-btn_01.png',
     });
     return _returnLabel;
 }
 
 //左侧返回按钮
 function fun_createReturnBtn(view, win) {
-    var _leftBar=fun_createLeftBar();
-    var _rightBar=fun_createHomeImg();
+    var _leftBar = fun_createLeftBar();
+    var _rightBar = fun_createHomeImg();
     view.add(_leftBar);
     view.add(_rightBar);
     _leftBar.addEventListener('touchstart', function() {
-        _leftBar.image='/images/return-btn_02.png';
+        _leftBar.image = '/images/return-btn_02.png';
     });
     _leftBar.addEventListener('touchend', function() {
         win.close();
-        _leftBar.image='/images/return-btn_01.png';
+        _leftBar.image = '/images/return-btn_01.png';
     });
-    _rightBar.addEventListener('touchstart', function() { 
-        _rightBar.image='/images/main-btn_02.png';
+    _rightBar.addEventListener('touchstart', function() {
+        _rightBar.image = '/images/main-btn_02.png';
     });
-    _rightBar.addEventListener('touchend', function() { 
-        _rightBar.image='/images/main-btn_01.png';
+    _rightBar.addEventListener('touchend', function() {
+        _rightBar.image = '/images/main-btn_01.png';
         var main = require('ui/main');
         var main_win = new main();
         main_win.open();
@@ -237,11 +237,11 @@ function ui_getDimension() {
 }
 
 //建立启动动画页面
-function ui_createPreScrollableView(win,main_win) {
+function ui_createPreScrollableView(win, main_win) {
     var img1 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre1.png',
-        width : '480dip',
-        height : '800dip'
+        width : '100%',
+        height : '100%'
     });
     var img2 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre2.png',
@@ -303,7 +303,7 @@ function ui_createPreScrollableView(win,main_win) {
         views : [view1, view2, view3],
         showPagingControl : false
     });
-    return scrollableView; 
+    return scrollableView;
 }
 
 
