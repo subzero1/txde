@@ -265,8 +265,8 @@ function ui_createPreScrollableView(win, main_win) {
     view3.add(img3);
     var img1 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre1.png',
-        width : '480dip',
-        height : '800dip'
+        width : '100%',
+        height : '100%'
     });
     var img2 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre2.png',
