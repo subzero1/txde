@@ -191,12 +191,13 @@ function su_menuInfo(menu, opp, label) {
     client.send(param);
     return json;
 }
+
 /**
  * 根据路径标签得到单签版本
  * @param {Object} path
  * @param {Object} tagName
  */
-function ui_getElementsByTagName(path,tagName) {
+function ui_getElementsByTagName(path, tagName) {
     var file = Ti.Filesystem.getFile(path);
     var xmltext = file.read().text;
     var doc = Ti.XML.parseString(xmltext);
@@ -208,14 +209,14 @@ function ui_getElementsByTagName(path,tagName) {
  * 当前版本
  */
 function u_getCurrentVersion() {
-    Ti.API.info('----------------------------------------:update');
     var db = Ti.Database.open('TXDE');
-    var version='';
-    var sql = "select version from TX_APP  where id=1 ";
+    var version = '';
+    var sql = "select * from TX_APP  where id=1 ";
     Ti.API.info('SQL:' + sql);
-    var row=db.execute(sql);
-    while(row.isValidRow){
-        version=row.field(0);
+    var row = db.execute(sql);
+    while (row.isValidRow()) {
+        version = row.field(3);
+        row.next();
     }
     return version;
     db.close();
@@ -224,28 +225,26 @@ function u_getCurrentVersion() {
 /**
  * 更新当前版本
  */
-function u_setCurrentVersion() {
+function u_setCurrentVersion(version) {
     Ti.API.info('----------------------------------------:update');
     var db = Ti.Database.open('TXDE');
-    var version='';
-    var sql = "update TX_APP  set version="+ui_getElementsByTagName('../tiapp.xml','version')+"where id=1 ";
+    var version = '';
+    var sql = "update TX_APP  set version=" + version + "where id=1 ";
     Ti.API.info('SQL:' + sql);
-    var row=db.execute(sql);
-    while(row.isValidRow){
-        version=row.field(0);
-    }
+    var row = db.execute(sql);
     return version;
     db.close();
 }
 
 /**
- * 是否新版本
+ * 是否是更新的版本
  */
-function u_checkVersion () {
-  var opp=false;
-  if (u_getCurrentVersion()!=ui_getElementsByTagName('../tiapp.xml','version')) {
-      opp=true;
-      u_setCurrentVersion();
-  } 
+function u_checkVersion(version) {
+    var opp = false;
+    if (u_getCurrentVersion() != version) {
+        opp = true;
+        u_setCurrentVersion(version);
+    }
+    return opp;
 }
 
