@@ -20,9 +20,20 @@ if (Ti.version < 1.8) {
         fullscreen : false,
         backgroundImage : '/images/main.png'
     });
+
+    // Create an ImageView.
+    var imageView = Ti.UI.createImageView({
+        image : '/images/mdpi/p0.png',
+        width : '84dip',
+        height : '21dip',
+        bottom : '21dip',
+        zIndex : 2
+    });
+
     var main = require('ui/MainView');
     var main_win = new main();
-    var scrollableView = ui_createPreScrollableView(win, main_win);
+    var scrollableView = ui_createPreScrollableView(win, main_win,imageView);
+    win.add(imageView);
     win.add(scrollableView);
     fun_createMenuBottomBar(win);
     win.open();
