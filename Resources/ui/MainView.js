@@ -1,10 +1,11 @@
 Ti.include('./basic/BasicMenuItem.js');
 Ti.include('./basic/UI.js');
 Ti.include('../service/user.js');
-var dimention=ui_getDimension();
+var dimention = ui_getDimension();
 function MainView() {
-    var win =  Ti.UI.createView({
-        width:'100%',
+    var win = Ti.UI.createView({
+        width : '100%',
+        zIndex : 3
     });
     var view = Ti.UI.createScrollView({
         backgroundImage : '/images/main.png'
@@ -17,10 +18,10 @@ function MainView() {
         width : '95%',
         height : '237dip',
     });
-    var decxRow=bmi_createMenuItemTableRow('/images/De.png', '定额查询', '', 1);
-    var clcxRow=bmi_createMenuItemTableRow('/images/Material.png', '材料查询', '', 2);
-    var jxcxRow=bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '', 3);
-    var ybcxRow=bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '', 4);
+    var decxRow = bmi_createMenuItemTableRow('/images/De.png', '定额查询', '', 1);
+    var clcxRow = bmi_createMenuItemTableRow('/images/Material.png', '材料查询', '', 2);
+    var jxcxRow = bmi_createMenuItemTableRow('/images/Machine.png', '机械查询', '', 3);
+    var ybcxRow = bmi_createMenuItemTableRow('/images/Meter.png', '仪表查询', '', 4);
     tableData.push(decxRow);
     tableData.push(clcxRow);
     tableData.push(jxcxRow);
@@ -29,10 +30,10 @@ function MainView() {
 
     //左上角logo
     var headLogo = Ti.UI.createImageView({
-        image : '/images/'+dimention+'headLogo.png',
+        image : '/images/' + dimention + 'headLogo.png',
         top : '0',
         zIndex : '1',
-        height:'90dip'
+        height : '90dip'
     });
     //右下角版权信息
     var infoLabel = Ti.UI.createLabel({
