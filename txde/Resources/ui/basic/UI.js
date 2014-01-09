@@ -206,7 +206,7 @@ function fun_createReturnBtn(view, win) {
 function fun_createMenuBottomBar(win) {
     var dimention = ui_getDimension();
     // Create the Android menu.
-    var SETTING = 1, EXIT = 2, ABOUT = 3;
+    var SETTING = 1, EXIT = 2, ABOUT = 3,UPDATE=4;
     var activity = win.activity;
     activity.onCreateOptionsMenu = function(e) {
         var menu = e.menu;
@@ -217,6 +217,15 @@ function fun_createMenuBottomBar(win) {
         menuItem.setIcon('/images/' + dimention + 'exit.png');
         menuItem.addEventListener('click', function(e) {
             win.close();
+        });
+
+        menuItem = menu.add({
+            title : '更新',
+            itemId : UPDATE,
+        });
+        menuItem.setIcon('/images/RightArrow.png');
+        menuItem.addEventListener('click', function(e) {
+            Ti.Platform.openURL('http://www.tjnetsky.com.cn/txgys/netsky_txde.apk');
         });
 
     };
@@ -237,7 +246,7 @@ function ui_getDimension() {
 }
 
 //建立启动动画页面
-function ui_createPreScrollableView(win, main_win,imageView) {
+function ui_createPreScrollableView(win, main_win, imageView) {
     var img1 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre1.png',
         width : '100%',
@@ -297,16 +306,16 @@ function ui_createPreScrollableView(win, main_win,imageView) {
                 }));
             }, 2000);
         }
+        fun_createMenuBottomBar(win);
         win.add(main_win);
     });
     var scrollableView = Ti.UI.createScrollableView({
         views : [view1, view2, view3],
         showPagingControl : false
     });
-    scrollableView.addEventListener('scrollend',function(e){
-        imageView.image='/images/mdpi/p'+e.currentPage+'.png';
+    scrollableView.addEventListener('scrollend', function(e) {
+        imageView.image = '/images/mdpi/p' + e.currentPage + '.png';
     });
     return scrollableView;
 }
-
 
