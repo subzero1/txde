@@ -7,7 +7,6 @@ if (Ti.version < 1.8) {
     alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
 }
 
-// This is a single context application with mutliple windows in a stack
 (function() {
     // Ti.API.info('-=-=-=-==-==-=-=-=-===============:' + isFirst);
     // if (isFirst == "1") {
@@ -35,7 +34,6 @@ if (Ti.version < 1.8) {
     var scrollableView = ui_createPreScrollableView(win, main_win,imageView);
     win.add(imageView);
     win.add(scrollableView);
-    fun_createMenuBottomBar(win);
     win.open();
     // };
     su_getUserLocation();
