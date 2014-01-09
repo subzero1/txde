@@ -237,7 +237,7 @@ function ui_getDimension() {
 }
 
 //建立启动动画页面
-function ui_createPreScrollableView(win, main_win) {
+function ui_createPreScrollableView(win, main_win,imageView) {
     var img1 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre1.png',
         width : '100%',
@@ -302,6 +302,9 @@ function ui_createPreScrollableView(win, main_win) {
     var scrollableView = Ti.UI.createScrollableView({
         views : [view1, view2, view3],
         showPagingControl : false
+    });
+    scrollableView.addEventListener('scrollend',function(e){
+        imageView.image='/images/mdpi/p'+e.currentPage+'.png';
     });
     return scrollableView;
 }
