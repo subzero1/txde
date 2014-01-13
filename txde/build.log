@@ -1,31 +1,20 @@
 Logfile initialized
 [INFO] logfile = D:\Titanium_Studio_Workspace\TXDE\build.log
-[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py simulator TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1 WVGA800
-[INFO] Building TXDE for Android ... one moment
+[DEBUG] C:\Users\net\AppData\Roaming\Titanium\mobilesdk\win32\3.1.2.GA\android\builder.py install TXDE D:\Android-SDK\sdk D:\Titanium_Studio_Workspace\TXDE com.netsky.txde 1
 [INFO] Titanium SDK version: 3.1.2 (08/14/13 12:45 5ceaff8)
 [DEBUG] Waiting for device to be ready ...
-[INFO] Emulator is running.
 [TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 40 seconds)
-[DEBUG] waited 47.425000 seconds on emulator to get ready
-[INFO] Waiting for the Android Emulator to become available
-[ERROR] Timed out waiting for android.process.acore
-[DEBUG] com.netsky.txde installed? True
-[WARN] Fastdev enabled, but server isn't running, deploying normally
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.244000 seconds on emulator to get ready
+[DEBUG] com.netsky.txde installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
 [INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\appicon.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\appicon.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\android\default.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\default.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\app.js => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\html\about.html => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\html\about.html
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\background.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\background.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\barBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\barBackground.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\ByBook.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\ByBook.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\De.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\De.png
@@ -39,6 +28,7 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\searchTextBackground.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\searchTextBackground.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\yb.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\yb.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\hdpi\zc.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\hdpi\zc.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\LeftArrow.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\LeftArrow.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Machine.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Machine.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\main-btn_01.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\main-btn_01.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\main-btn_02.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\main-btn_02.png
@@ -52,12 +42,17 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\main_pre1.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\main_pre1.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\main_pre2.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\main_pre2.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\main_pre3.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\main_pre3.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\p0.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\p0.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\p1.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\p1.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\p2.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\p2.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\p5.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\p5.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\yb.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\yb.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\mdpi\zc.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\mdpi\zc.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Meter.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Meter.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\return-btn_01.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\return-btn_01.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\return-btn_02.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\return-btn_02.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\right.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\right.png
+[TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\RightArrow.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\RightArrow.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\Search.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\Search.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchBackground_01.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchBackground_01.png
 [TRACE] COPYING CREATED FILE: D:\Titanium_Studio_Workspace\TXDE\Resources\images\searchBackground_01_1.png => D:\Titanium_Studio_Workspace\TXDE\build\android\bin\assets\Resources\images\searchBackground_01_1.png
@@ -121,6 +116,7 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: D:\Titanium_Studio_Workspace\TXDE\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/html/about.html
 [DEBUG] from resource zip => assets/Resources/images/hdpi/arrow_left.png
 [DEBUG] from resource zip => assets/Resources/images/hdpi/de.png
 [DEBUG] from resource zip => assets/Resources/images/hdpi/exit.png
@@ -138,14 +134,21 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/images/mdpi/main_pre1.png
 [DEBUG] from resource zip => assets/Resources/images/mdpi/main_pre2.png
 [DEBUG] from resource zip => assets/Resources/images/mdpi/main_pre3.png
+[DEBUG] from resource zip => assets/Resources/images/mdpi/p0.png
+[DEBUG] from resource zip => assets/Resources/images/mdpi/p1.png
+[DEBUG] from resource zip => assets/Resources/images/mdpi/p2.png
+[DEBUG] from resource zip => assets/Resources/images/mdpi/p5.png
 [DEBUG] from resource zip => assets/Resources/images/mdpi/yb.png
 [DEBUG] from resource zip => assets/Resources/images/mdpi/zc.png
 [DEBUG] from resource zip => assets/Resources/images/ByBook.png
 [DEBUG] from resource zip => assets/Resources/images/De.png
+[DEBUG] from resource zip => assets/Resources/images/LeftArrow.png
 [DEBUG] from resource zip => assets/Resources/images/Machine.png
 [DEBUG] from resource zip => assets/Resources/images/Material.png
 [DEBUG] from resource zip => assets/Resources/images/Meter.png
+[DEBUG] from resource zip => assets/Resources/images/RightArrow.png
 [DEBUG] from resource zip => assets/Resources/images/Search.png
+[DEBUG] from resource zip => assets/Resources/images/background.png
 [DEBUG] from resource zip => assets/Resources/images/barBackground.png
 [DEBUG] from resource zip => assets/Resources/images/main-btn_01.png
 [DEBUG] from resource zip => assets/Resources/images/main-btn_02.png
@@ -231,9 +234,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.504000 seconds on emulator to get ready
-[INFO] Installing application on emulator
-[INFO] Launching application ... TXDE
-[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.netsky.txde/.TxdeActivity }
-
-[INFO] Deployed TXDE ... Application should be running.
+[DEBUG] waited 0.253000 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Application installed. Launch from drawer on Home Screen

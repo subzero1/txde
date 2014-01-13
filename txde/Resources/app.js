@@ -23,12 +23,11 @@ if (Ti.version < 1.8) {
     // Create an ImageView.
     var imageView = Ti.UI.createImageView({
         image : '/images/mdpi/p0.png',
-        width : '84dip',
-        height : '21dip',
+        width : '192dip',
+        height : '48dip',
         bottom : '21dip',
         zIndex : 2
     });
-
     var main = require('ui/MainView');
     var main_win = new main();
     var scrollableView = ui_createPreScrollableView(win, main_win,imageView);

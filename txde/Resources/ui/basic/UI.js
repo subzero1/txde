@@ -206,7 +206,7 @@ function fun_createReturnBtn(view, win) {
 function fun_createMenuBottomBar(win) {
     var dimention = ui_getDimension();
     // Create the Android menu.
-    var SETTING = 1, EXIT = 2, ABOUT = 3,UPDATE=4;
+    var SETTING = 1, EXIT = 2, ABOUT = 3, UPDATE = 4;
     var activity = win.activity;
     activity.onCreateOptionsMenu = function(e) {
         var menu = e.menu;
@@ -315,6 +315,24 @@ function ui_createPreScrollableView(win, main_win, imageView) {
     });
     scrollableView.addEventListener('scrollend', function(e) {
         imageView.image = '/images/mdpi/p' + e.currentPage + '.png';
+        if (e.currentPage == 2) {
+            imageView.addEventListener('click', function(e) {
+                if (animationsOn) {
+                    setTimeout(function() {
+                        main_win.animate(Ti.UI.createAnimation({
+                            opacity : 1,
+                            duration : 4000
+                        }));
+                    }, 2000);
+                }
+                fun_createMenuBottomBar(win);
+                win.add(main_win);
+            });
+        } else {
+            imageView.removeEventListener('click',function(e){
+                Ti.API.info('click Event Remove');
+            });
+        };
     });
     return scrollableView;
 }
