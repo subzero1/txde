@@ -1,6 +1,7 @@
 //通过GPS定位得到地点,经纬度
 //var request_url='http://192.168.1.102:8080/gys/';
-var request_url = 'http://www.txgys.com.cn/';
+//var request_url = 'http://www.txgys.com.cn/';
+var request_url = 'http://115.28.134.10:81/txgys/';
 function su_getUserLocation() {
 
     Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
