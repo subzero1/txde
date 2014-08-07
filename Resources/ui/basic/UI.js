@@ -247,6 +247,31 @@ function ui_getDimension() {
 
 //建立启动动画页面
 function ui_createPreScrollableView(win, main_win, imageView) {
+    // var img1 = Ti.UI.createImageView({
+        // image : '/images/mdpi/main_pre1.png',
+        // width : '100%',
+        // height : '100%'
+    // });
+    // var img2 = Ti.UI.createImageView({
+        // image : '/images/mdpi/main_pre2.png',
+        // width : '100%',
+        // height : '100%'
+    // });
+    // var img3 = Ti.UI.createImageView({
+        // image : '/images/mdpi/main_pre3.png',
+        // width : '100%',
+        // height : '100%'
+    // });
+    // var view1 = Ti.UI.createView({
+    // });
+    // var view2 = Ti.UI.createView({
+    // });
+    // var view3 = Ti.UI.createView({
+        // opacity : '0.75'
+    // });
+    // view1.add(img1);
+    // view2.add(img2);
+    // view3.add(img3);
     var img1 = Ti.UI.createImageView({
         image : '/images/mdpi/main_pre1.png',
         width : '100%',
@@ -262,28 +287,8 @@ function ui_createPreScrollableView(win, main_win, imageView) {
         width : '100%',
         height : '100%'
     });
-    var view1 = Ti.UI.createView({
-    });
-    var view2 = Ti.UI.createView({
-    });
-    var view3 = Ti.UI.createView({
-        opacity : '0.75'
-    });
-    view1.add(img1);
-    view2.add(img2);
-    view3.add(img3);
-    var img1 = Ti.UI.createImageView({
-        image : '/images/mdpi/main_pre1.png',
-        width : '100%',
-        height : '100%'
-    });
-    var img2 = Ti.UI.createImageView({
-        image : '/images/mdpi/main_pre2.png',
-        width : '100%',
-        height : '100%'
-    });
-    var img3 = Ti.UI.createImageView({
-        image : '/images/mdpi/main_pre3.png',
+    var img4 = Ti.UI.createImageView({
+        image : '/images/mdpi/main_pre4.png',
         width : '100%',
         height : '100%'
     });
@@ -294,10 +299,14 @@ function ui_createPreScrollableView(win, main_win, imageView) {
     var view3 = Ti.UI.createView({
         opacity : '0.75'
     });
+    var view4 = Ti.UI.createView({
+        opacity : '0.75'
+    });
     view1.add(img1);
     view2.add(img2);
     view3.add(img3);
-    view3.addEventListener('click', function(e) {
+    view4.add(img4);
+    view4.addEventListener('click', function(e) {
         if (animationsOn) {
             setTimeout(function() {
                 main_win.animate(Ti.UI.createAnimation({
@@ -310,12 +319,12 @@ function ui_createPreScrollableView(win, main_win, imageView) {
         win.add(main_win);
     });
     var scrollableView = Ti.UI.createScrollableView({
-        views : [view1, view2, view3],
+        views : [view1, view2, view3,view4],
         showPagingControl : false
     });
     scrollableView.addEventListener('scrollend', function(e) {
         imageView.image = '/images/mdpi/p' + e.currentPage + '.png';
-        if (e.currentPage == 2) {
+        if (e.currentPage == 3) {
             imageView.addEventListener('click', function(e) {
                 if (animationsOn) {
                     setTimeout(function() {

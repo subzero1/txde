@@ -110,7 +110,7 @@ function setBookPicker() {
     });
     while (bookRows.isValidRow()) {
         bookData[i] = Ti.UI.createPickerRow({
-            title : (bookRows.field(0)-1)+'、'+bookRows.field(2),
+            title : (bookRows.field(0))+'、'+bookRows.field(2),
             text : bookRows.field(1)
         });
         i++;
