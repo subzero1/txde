@@ -18,6 +18,7 @@ function deDetailTabGroup() {
             color : 'black'
         },
     });
+      
     var clTab = Ti.UI.createTab({
         title : '关联主材',
         icon : '/images/'+dimension+'zc.png',
