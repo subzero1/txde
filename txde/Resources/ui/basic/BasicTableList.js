@@ -73,6 +73,7 @@ function fun_createTableRow(rows, index) {
         },
         width : '36dip',
         left : '8dip',
+        top : '8dip',
         textAlign : 'center',
     });
     //定额编号
