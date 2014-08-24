@@ -69,7 +69,7 @@ bookPicker.addEventListener('change', function(e) {
 
 //set the text of sectorPicker
 chapterPicker.addEventListener('change', function(e) {
-    setSectorPicker(e.row.text);
+    setSectorPicker(bookPicker.getSelectedRow(0).text,e.row.text);
     if(chapterPicker.getSelectedRow(0).text==null||chapterPicker.getSelectedRow(0).text==''){
         sectorPicker.hide();
     }else{
@@ -152,10 +152,11 @@ function setChapterPicker(param) {
 }
 
 //设置节列表值
-function setSectorPicker(param) {
+function setSectorPicker(book,chapter) {
     var hql = "select * from TA_SECTOR where 1=1 ";
-    hql += "and chapter='" + param;
-    hql += "' order by book,chapter,sector,sectord limit 10 offset 0";
+    hql += "and chapter='" + chapter;
+    hql +="' and book ='"+book;
+    hql += "' order by book,chapter,sector,sectord";
     Ti.API.info(hql);
     var sectorRows = db.execute(hql);
     var sectorData ;
@@ -168,7 +169,7 @@ function setSectorPicker(param) {
     sectorDataColumns.add(sectorData);
     while (sectorRows.isValidRow()) {
         sectorData = Ti.UI.createPickerRow({
-            title : sectorRows.field(4)+'/'+sectorRows.field(3) + ' ' + sectorRows.field(5),
+            title : sectorRows.field(3)+'.'+sectorRows.field(4) + ' ' + sectorRows.field(5),
             text : sectorRows.field(4)
         });
         sectorDataColumns.add(sectorData);
