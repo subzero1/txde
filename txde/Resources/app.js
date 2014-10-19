@@ -3,7 +3,7 @@ Ti.include('./service/user.js');
 
 var db = Ti.Database.install('TXDE.sqlite', 'TXDE');
 db.close();
-var app_version="1.1.1";//版本号
+var app_version="1.1.2";//版本号
 // var isFirst = su_isFirstInstall();
 if (Ti.version < 1.8) {
     alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');

@@ -5,7 +5,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.418000 seconds on emulator to get ready
+[DEBUG] waited 0.079000 seconds on emulator to get ready
 [DEBUG] com.netsky.txde installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -234,6 +234,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.295000 seconds on emulator to get ready
+[DEBUG] waited 0.063000 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen

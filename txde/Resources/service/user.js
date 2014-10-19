@@ -263,14 +263,27 @@ function u_checkAPPVersion(app_version) {
 		onload : function(e) {
 			Ti.API.info("AJAX返回信息: " + this.responseText);
 			if (this.responseText == 'false' || this.responseText == '0' || this.responseText == null) {
-				json = this.responseText;
+				
+				json = this.responseText;alert(json);
 			} else {
 				json = JSON.parse(this.responseText);
 				var service_app_version = json.version.version;
 				if (app_version != service_app_version) {
 
 					setTimeout(function() {
-						alert("温馨提示：有新版本：版本号" + service_app_version);
+
+						var dialog = Ti.UI.createAlertDialog({
+							cancel : 1,
+							buttonNames : ['确定', '取消'],
+							message : "有新版本：版本号" + service_app_version,
+							title : '温馨提示'
+						});
+						dialog.addEventListener('click', function(e) {
+							if (e.index ==0) {
+								Ti.Platform.openURL('http://www.tjnetsky.com.cn/txgys/netsky_txde.apk');
+							}
+						});
+						dialog.show();
 					}, 10000);
 				}
 			};

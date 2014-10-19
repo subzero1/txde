@@ -173,7 +173,7 @@ function fun_doSearch(tableName, searchStr, startRow, index, tableData, tableVie
     var rows;
     var sql = "SELECT * FROM " + tableName + " t WHERE 1=1 ";
     if (searchStr != null && searchStr != '') {
-        sql += " and (t.bh like '" + searchStr + "%' or t.mc like '" + searchStr + "%' ) ";
+        sql += " and (t.bh like '%" + searchStr + "%' or t.mc like '%" + searchStr + "%' ) ";
     }
     sql += " order by t.bh limit 10 offset " + startRow;
     Ti.API.info('SQL:' + sql);
